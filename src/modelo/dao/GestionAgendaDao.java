@@ -11,6 +11,7 @@ public interface GestionAgendaDao {
     Contacto buscarUno(String nombre);
     Contacto buscarTelefono(String telefono);
     Contacto buscarEmail(String email);
+
     ArrayList<Contacto> buscarPorTresPrimeros(String nombre);
     boolean cambiarDatos(Contacto contacto);
     ArrayList<Contacto> contactosPorEmpresa(String empresa);
