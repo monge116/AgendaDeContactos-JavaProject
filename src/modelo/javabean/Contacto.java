@@ -17,13 +17,22 @@ public class Contacto {
         this.empresa = empresa;
     }
 
+    /**
+     * Constructor vacio para el Objeto Contacto
+     */
     public Contacto() {
     }
 
+    /**
+     * Método para obtener el valor de la clave única
+     * @return nombre
+     */
     public String getNombre() {
         return nombre;
     }
-
+    /**
+     * Método para establecer el valor de la clave única
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -71,6 +80,9 @@ public class Contacto {
                 '}';
     }
 
+    /**
+     * Dos contactos no pueden tener le mismo nombre
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

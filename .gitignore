@@ -3,7 +3,7 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .idea
-AgendaDeContactos.iml
+AgendaDeContactos-JavaProject.iml
 
 ### Eclipse ###
 .apt_generated

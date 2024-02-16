@@ -4,6 +4,9 @@ import modelo.javabean.Contacto;
 
 import java.util.ArrayList;
 
+/**
+ * Implementa los métodos en GestionAgendaDaoImplArrayList
+ */
 public interface GestionAgendaDao {
     ArrayList<Contacto> buscarTodos();
     boolean altaContacto(Contacto contacto);
