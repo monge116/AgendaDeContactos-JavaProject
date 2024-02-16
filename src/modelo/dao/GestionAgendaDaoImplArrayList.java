@@ -7,11 +7,17 @@ import java.util.ArrayList;
 public class GestionAgendaDaoImplArrayList implements GestionAgendaDao{
     private ArrayList<Contacto> contactos;
 
-
+    /**
+     * Muestra todos los contactos de una agenda
+     * @return ArrayList<Contactos>
+     */
     public ArrayList<Contacto> buscarTodos(){
         return contactos;
     }
 
+    /**
+     * Constructor Agenda
+     */
     public GestionAgendaDaoImplArrayList(){
         contactos=new ArrayList<>();
         cargarContactos();
@@ -88,7 +94,7 @@ public class GestionAgendaDaoImplArrayList implements GestionAgendaDao{
     /**
      * Busca por email
      * @param email
-     * @return
+     * @return Contacto
      */
     @Override
     public Contacto buscarEmail(String email) {
